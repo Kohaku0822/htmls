@@ -4,6 +4,14 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+/*追記*/
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*追記ここまで*/
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
