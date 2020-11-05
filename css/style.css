@@ -75,11 +75,11 @@ body{
     margin: 0 auto;
 }
 .topimg img{
-    width: 70%;
+    width: 80%;
     height: auto;
     position: absolute;
-    top: 6%;
-    left: 15%;
+    top: 0;
+    left: 10%;
     z-index: 20;
 }
 .logo img{
