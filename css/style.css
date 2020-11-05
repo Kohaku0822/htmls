@@ -1,0 +1,254 @@
+/* 全体部分 */
+
+/* フォント設定 */
+@font-face {
+    font-family: "jkfont";
+    src: url("../font/JKG-L_3.ttf") format("truetype");
+}
+
+
+body{
+    background-color: #e2bdb3;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    font-family: "jkfont";
+}
+
+/* ヘッダー */
+.head {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: #646464;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+.head h2 img {
+    max-height: 49px;
+    min-width: 40px;
+    margin: 0 0 0 10px;
+}
+.head li {
+    color: rgb(217, 255, 47);
+}
+.head a {
+    text-decoration: none;
+    color: #fbfde7;
+}
+.head a:hover{
+    color: rgb(217, 233, 78);
+}
+.head ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+.head li {
+    margin: 0 5px 0 5px;
+    font-size: 20px;
+}
+.head nav {
+    margin:0 0 0 auto; 
+}
+.toplogo img{
+    width: 20%;
+    height: auto;
+    min-width: 30px;
+    min-height: 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .head {
+        display: none;
+    }
+}
+
+/* トップページ */
+.resp {
+    position: relative;
+    top: 50px;
+    min-width: 320px;
+    width: 100%;
+    padding-top: 130%;
+    min-height: 452px;
+    display: block;
+    margin: 0 auto;
+}
+.topimg img{
+    width: 80%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    z-index: 20;
+}
+.logo img{
+    height: 13%;
+    width: auto;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    z-index: 21;
+}
+.sub1 img{
+    width: 25%;
+    height: auto;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+}
+.sub1 img:hover{
+    opacity: 0.7;
+}
+.sub2 img{
+    width: 25%;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+}
+.sub2 img:hover{
+    opacity: 0.7;
+}
+.sub3 img{
+    width: 25%;
+    position: absolute;
+    top: 35%;
+    right: 2%;
+}
+.sub3 img:hover{
+    opacity: 0.7;
+}
+.sub4 img{
+    width: 25%;
+    position: absolute;
+    top: 55%;
+    right: 5%;
+}
+.sub4 img:hover{
+    opacity: 0.7;
+}
+.sub5 {
+    width: 15%;
+    height: 120px;
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    background: rgb(193, 232, 255);
+    font-size: 1.5vw;
+}
+@media screen and (min-width: 1001px){
+    .sub6{
+      width: 15%;
+      position: absolute;
+      top: 45%;
+      left: 3%;
+      z-index: 0;
+    }
+}
+@media screen and (max-width: 1000px){
+    .sub6 {
+      display: none;
+    }
+}
+  
+.fadein {
+    opacity: 0;
+    animation-name: fadein;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+/* 間隔調整 */
+.spaceber {
+    height: 50px;
+    font-size: 10vw;
+}
+
+@media screen and (min-width: 800px) {
+    .spaceber a{
+        display: none;
+    }
+}
+
+/* カード隙間調整 */
+.card-deck .card {
+    margin-bottom: 15px;
+}
+.link_box_padding{
+    padding: 20px 0px 20px;
+}
+
+/* プロフィール */
+.plofile {
+    position: relative;
+    min-width: 320px;
+    width: 100%;
+    padding-top: 150%;
+    min-height: 452px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 801px){
+    .plo-text {
+        position: absolute;
+        top: 0;
+        width: 40%;
+    }
+
+    .plo-text h1 {
+        text-align: center;
+    }
+
+    .plo-li {
+        position: absolute;
+        left: 30%;
+        text-align: left;
+        font-size: 20px;
+        color: rgb(54, 5, 5);
+    }
+    .plo-img img{
+        position: absolute;
+        top: 0;
+        left: 40%;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .plo-text {
+        position: absolute;
+        top: 0;
+        left: auto;
+        width: 100%;
+        height: 600px;
+        margin: auto;
+    }
+    .plo-text h1 {
+        text-align: center;
+    }
+    .plo-li {
+        text-align: left;
+        font-size: 20px;
+        color: rgb(54, 5, 5);
+    }
+
+    .plo-img {
+        text-align: center;
+    }
+    .plo-img img{
+        position: absolute;
+        min-width: 340px;
+        top: 400px;
+        width: 40%;
+    }
+}
